@@ -1,0 +1,16 @@
+<div *ngIf="id" class="panel panel-default">
+    <div class="panel-heading">
+        <h2>Salario Detalle (ID: {{ id }})</h2>
+    </div>
+    <div class="panel-body" >
+        <p>Nombre: {{ nombre }}</p>
+        <p>Apellido: {{ apellido }}</p>
+        <p>Email: {{ email }}</p>
+        <p>Teléfono: {{ telefono }}</p>
+        <p>Salario: {{ salario }}</p>
+    </div>
+</div>
+  
+<div *ngIf="!id">
+    <h2>Salario no encontrado</h2>
+</div>
